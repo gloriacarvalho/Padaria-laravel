@@ -19,3 +19,5 @@ Route::get('/', function () {
 Route::get('/padaria', [PrincipalController::class, 'bakery']);
 
 Route::get('/sobre', [PrincipalController::class, 'sobre']); 
+Route::get('/contato', [PrincipalController::class, 'contato'])->name('contato.form');
+Route::post('/contato', [PrincipalController::class, 'enviarContato'])->name('contato.enviar');
