@@ -2,7 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PrincipalController;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,3 +17,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/padaria', [PrincipalController::class, 'bakery']);
+
+Route::get('/sobre', [PrincipalController::class, 'sobre']); 
